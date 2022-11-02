@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://127.0.0.1:8000/test/" method="POST">
+        {%csrf_token%}
+        <section className="calender" >
+            <input type="date" id="date" name="chooosendate">
+
+    
+           
+        <select name="deskSELECTED" id="a">
+            <option value="DESK A1"> A1</option>
+            <option value="DESK A2"> A2</option>
+            <option value="DESK A3"> A3</option>
+            <option value="DESK A4"> A4</option>
+
+        </select>
+        <button type ="submit" name="buton">Book NOW</button>
+    </form>
+
+</body>
+</html>
